@@ -1,0 +1,198 @@
+:root{
+    --btn-sucess: #08aa71;
+    --btn-sucess-hover: #36c492;
+    --text-primary: #4e4e4e;
+    --text-error: #db7979;
+    --text-ligth: #9f9f9f;
+    --text-white: #fff;
+    --text-default-size:15px;
+    --input-bg: #ededed;
+    --background: #f6fafd;
+    --task-car-bg: #fff;
+    --card-border-radius: 10px;
+    
+}
+
+.mt-1{
+    margin-top: 4px;
+}
+.mt-2{
+    margin-top: 8px;  
+}
+.mt-5{
+    margin-top: 20px; 
+}
+.pt-1{
+    padding-top: 4px;
+}
+.pt-2{
+    padding-top: 8px;
+}
+.pt-5{
+    padding-top: 20px;
+}
+
+.pb-2{
+    padding-bottom: 8px;
+}
+
+p{
+    padding: 0;
+    margin: 0;
+}
+
+.btn{
+    padding: 10px 25px ;
+    border: none;
+    box-shadow: none;
+    border-radius: 4px ;
+    cursor: pointer;
+}
+
+.text-light{
+    color: var(--text-ligth);
+}
+
+body, html{
+    font-family: 'Nunito';
+    color: var(--text-primary);
+    font-size: var(--text-default-size);
+    background-color: var(--background);
+
+
+}
+
+.todo__task-list{
+    width: 60%;
+    margin: auto;
+}
+
+.task__card{
+
+    background-color: var(--task-car-bg);
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+    padding: 0 14px;
+    border-radius: var(--card-border-radius);
+    border-left: 2px solid transparent;
+}
+
+.task_card_action{
+    display: flex;
+    justify-content: end;
+    align-items: center ;
+}
+
+.task_card_action span{
+    margin-left: 20px;
+    cursor: pointer;    
+}
+.task_card_action span:hover{
+    color:var(--text-primary) ;   
+}
+
+.task_card_title{
+    font-size: 16px;
+
+}
+
+.task__card__footer{
+    border-top: 1px solid rgba(212, 212, 212, 0.8);
+    padding: 14px 0;
+}
+
+.task__card__meta{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.avatar{
+    width: 40px;
+    border-radius: 50%;
+}
+
+.border-active{
+    border-color: var(--btn-sucess);
+}
+
+.border-complete{
+    border-color: var(--text-error);
+}
+
+.info-text{
+    font-size: 12px;
+
+}
+
+.todo_add{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.todo_add .btn{
+   background-color: var(--btn-sucess);
+   color: var(--text-white); 
+}
+
+.todo_add .btn:hover{
+    background-color: var(--btn-sucess-hover);
+}
+.dialog{
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow: auto;
+}
+
+.dialog_content{
+    background-color: var(--text-white);
+    padding: 20px;
+    max-width: 400px;
+    max-height: 450px;
+    border-radius: 4px;
+    margin: auto;
+    margin-top: 150px;
+}
+
+.dialog_head{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.dialog_head button{
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.dialog input {
+    padding: 4px 0px;
+    width: 100%;
+    height: 25px;
+    border: none;   
+    border-radius: 4px;
+    background: var(--input-bg);
+    outline: none;
+    margin-bottom: 8px;
+}
+
+.dialog_body button{
+    background-color: var(--btn-sucess);
+    margin-top: 8px;
+    color: var(--text-white);
+}
+
+.dialog_body button:hover{
+    background-color: var(--btn-sucess-hover);
+   
+}
+
+.form_btn{
+    display: flex;
+    justify-content: flex-end;
+}
