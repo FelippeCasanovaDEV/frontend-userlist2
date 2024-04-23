@@ -13,7 +13,7 @@
                 <TaskCard/>
             </div>
 
-            <h3>Completed Task</h3>
+            <h3>Tarefa Concluída</h3>
             <!--- the active task list -->
             <div v-for="(item, index) in [1,2,3,4]" :key= index>
                 <TaskCard/>
